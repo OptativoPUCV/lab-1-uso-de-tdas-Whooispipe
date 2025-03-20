@@ -57,7 +57,11 @@ List* crea_lista() {
    }
    return L;
    */
-  return NULL;
+  
+   List* L = create_list();
+   return L;
+
+
 }
 
 /*
