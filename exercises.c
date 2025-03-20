@@ -42,7 +42,7 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
-   /*
+   
    List* L = create_list();
    int  *elementos;
    for (int i = 1; i <= 10; i++) 
@@ -56,11 +56,11 @@ List* crea_lista() {
       
    }
    return L;
-   */
-  
+   
+  /*
    List* L = create_list();
    return L;
-
+   /*
 
 }
 
