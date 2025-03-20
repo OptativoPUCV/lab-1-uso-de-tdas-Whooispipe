@@ -78,6 +78,7 @@ int sumaLista(List *L) {
    return acumulador;
    
    */
+  return 0;
 }
 
 /*
