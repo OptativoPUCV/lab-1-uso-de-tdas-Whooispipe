@@ -42,19 +42,7 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
-   /*
-   List* L = create_list();
-   for(int i = 1 ; i < 11 ; i++){
-      int *dato = (int*)malloc(sizeof(int));
-      if(dato == NULL){
-         printf("Error al reservar memoria\n");
-         exit(1);
-      }
-      *dato = i;
-      pushBack(L , dato);
-   }
-   return L;
-   */
+   
   List* L = create_list();
   return L;
 }
@@ -66,6 +54,15 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    /*
+   int suma = 0;
+   int *elemento = first(L);
+   while(elemento != NULL)
+   {
+      suma += *elemento ;
+      elemento = next(L);
+   }
+   return suma;
+
    int acumulador=0;
    int *elementos;
    elementos = (int*)first(L);
@@ -91,20 +88,6 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem){
    
-   /*
-   int *dato = (int*)first(L);
-   while (dato != NULL) 
-   {
-      if (*dato == elem)
-      {
-      popCurrent(L);
-      } 
-      else 
-      {
-      dato = (int*)next(L);
-      }
-   }
-   */
 }
 
 
