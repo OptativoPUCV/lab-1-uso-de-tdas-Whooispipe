@@ -8,3 +8,10 @@ Wed, Mar 19, 2025  8:15:50 PM:
  tests:  2|3
 total_score: 20/70
 892a530
+Wed, Mar 19, 2025  9:22:27 PM: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.out: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+84b4178

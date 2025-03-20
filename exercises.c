@@ -68,6 +68,7 @@ int sumaLista(List *L) {
    elementos = (int*)first(L);
    while (elementos != NULL) {
       acumulador += *elementos;
+      free(elementos);
       elementos = (int*)next(L);
    }
    return acumulador;
@@ -84,6 +85,20 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem){
 
+   
+   int *elementos = (int*)first(L);
+   while (elementos != NULL){
+      
+      if(*elementos == elem) {
+         popCurrent(L);
+         
+         
+      }
+      else{
+         elementos = (int*)next(L);
+      }
+      
+   }
 }
 
 /*
