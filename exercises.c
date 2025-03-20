@@ -53,27 +53,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   /*
-   int suma = 0;
-   int *elemento = first(L);
-   while(elemento != NULL)
-   {
-      suma += *elemento ;
-      elemento = next(L);
-   }
-   return suma;
-
-   int acumulador=0;
-   int *elementos;
-   elementos = (int*)first(L);
-   while (elementos != NULL) {
-      acumulador += *elementos;
-  
-      elementos = (int*)next(L);
-   }
-   return acumulador;
    
-   */
   return 0;
 }
 
@@ -113,5 +93,3 @@ int parentesisBalanceados(char *cadena) {
    return 0;
 }
 
-/*efsnjfheskjfhs
-ofiesfiohseoifhs*/
