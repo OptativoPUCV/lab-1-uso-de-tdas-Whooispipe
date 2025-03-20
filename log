@@ -140,3 +140,18 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 b523e32
+Thu, Mar 20, 2025  7:15:10 PM: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:54:16: error: 'L' undeclared (first use in this function)
+       pushBack(L, elementos);
+                ^
+exercises.c:54:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:60:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b51ee00
