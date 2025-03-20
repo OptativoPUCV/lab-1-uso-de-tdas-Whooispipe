@@ -169,3 +169,10 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 175c255
+Thu, Mar 20, 2025  7:23:35 PM: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.out: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Compilation failed
+7b0f775

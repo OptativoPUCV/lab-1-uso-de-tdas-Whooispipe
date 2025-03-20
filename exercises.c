@@ -45,6 +45,10 @@ List* crea_lista() {
    List* L = create_list();
    for(int i = 1 ; i < 11 ; i++){
       int *dato = (int*)malloc(sizeof(int));
+      if(dato == NULL){
+         printf("Error al reservar memoria\n");
+         exit(1);
+      }
       *dato = i;
       pushBack(L , dato);
    }
