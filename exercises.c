@@ -42,6 +42,7 @@ Al finalizar retorna la lista creada.
 */
 
 List* crea_lista() {
+   /*
    List* L = create_list();
    int  *elementos;
    for (int i = 1; i <= 10; i++) 
@@ -55,6 +56,8 @@ List* crea_lista() {
       
    }
    return L;
+   */
+  return NULL;
 }
 
 /*
@@ -63,15 +66,18 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
+   /*
    int acumulador=0;
    int *elementos;
    elementos = (int*)first(L);
    while (elementos != NULL) {
       acumulador += *elementos;
-      free(elementos);
+  
       elementos = (int*)next(L);
    }
    return acumulador;
+   */
+   return 0;
 }
 
 /*
@@ -84,6 +90,7 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
+   /*
    
    int *elementos = (int*)first(L);
    while (elementos != NULL)
@@ -91,7 +98,7 @@ void eliminaElementos(List*L, int elem){
       if(*elementos == elem) 
       {
          popCurrent(L);
-         free(elementos);
+ 
       }
       else
       {
@@ -99,6 +106,7 @@ void eliminaElementos(List*L, int elem){
       }
       
    }
+   */
 }
 
 
@@ -124,3 +132,5 @@ int parentesisBalanceados(char *cadena) {
    return 0;
 }
 
+/*efsnjfheskjfhs
+ofiesfiohseoifhs*/
