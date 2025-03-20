@@ -66,7 +66,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   
+   /*
    int acumulador=0;
    int *elementos;
    elementos = (int*)first(L);
@@ -77,7 +77,7 @@ int sumaLista(List *L) {
    }
    return acumulador;
    
-   
+   */
 }
 
 /*
