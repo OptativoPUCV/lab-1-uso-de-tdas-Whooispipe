@@ -255,3 +255,13 @@ exercises.c:128:15: error: 'true' undeclared (first use in this function)
 cc1.exe: all warnings being treated as errors
 Compilation failed
 62af143
+Fri, Mar 21, 2025  8:59:39 PM: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+exercises.c:8:18: fatal error: list.h: No such file or directory
+ #include "list.h"
+                  ^
+compilation terminated.
+Compilation failed
+c32187b
