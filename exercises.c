@@ -119,7 +119,31 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   return 0;
+   int tamano= strlen(cadena);
+   bool noes=false;
+   for(int i=0 ; cadena[i] != '/0'; i++)
+   {
+      if(cadena[i]=='(' && cadena[tamano-(i+1)]!=')')
+      {
+         noes=true;
+      }
+      if(cadena[i]=='[' && cadena[tamano-(i+1)]!=']')
+      {
+         noes=true;
+      }
+      if(cadena[i]=='{' && cadena[tamano-(i+1)]!='}')
+      {
+         noes=true;
+      }
+   }
+   if(noes==true)
+   {
+      return 0;
+   }
+   else
+   {
+      return 1;
+   }
 }
 
 /*waudhwuahdiuwahdiuh
