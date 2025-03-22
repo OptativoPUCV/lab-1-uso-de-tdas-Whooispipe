@@ -139,7 +139,7 @@ int parentesisBalanceados(char *cadena)
       {
          return 0;
       }
-      if(cadena[i]=='{'  && top(pilalaotramitad) != '}')
+      if(cadena[i]=='{'  && top(pilalaotramitad) !='}')
       {
          return 0;
       }
@@ -149,7 +149,7 @@ int parentesisBalanceados(char *cadena)
 
    }
    
-   return 1;
+   return pilalaotramitad->top==NULL;
    
 }
 
