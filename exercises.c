@@ -131,15 +131,15 @@ int parentesisBalanceados(char *cadena)
    }
    for(int i=0; i<strlen(cadena);i++)
    {
-      if(cadena[i]=='('  && first(pilalaotramitad)!=')')
+      if(cadena[i]=='('  && top(pilalaotramitad)!=')')
       {
          return 0;
       }
-      if(cadena[i]=='['  && first(pilalaotramitad)!=']')
+      if(cadena[i]=='['  && top(pilalaotramitad)!=']')
       {
          return 0;
       }
-      if(cadena[i]=='{'  && first(pilalaotramitad)!='}')
+      if(cadena[i]=='{'  && top(pilalaotramitad)!='}')
       {
          return 0;
       }
