@@ -135,7 +135,7 @@ int parentesisBalanceados(char *cadena)
       }
    }
    
-   for(int i=(strlen(cadena)/2); i>0;i--)
+   for(int i=(strlen(cadena)/2); i>-1;i--)
    {
       char *elemento= first(pilalaotramitad);
       if(cadena[i] == '(' && *elemento == ')')
