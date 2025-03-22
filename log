@@ -558,3 +558,20 @@ exercises.c:134:29: error: implicit declaration of function 'firs' [-Werror=impl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 ad5250f
+Sat, Mar 22, 2025  8:12:51 PM: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:51: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='('  && first(pilalaotramitad)!=')')
+                                                   ^~
+exercises.c:138:51: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='['  && first(pilalaotramitad)!=']')
+                                                   ^~
+exercises.c:142:51: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='{'  && first(pilalaotramitad)!='}')
+                                                   ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+3cf125f
