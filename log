@@ -399,3 +399,9 @@ exercises.c:142:7: error: implicit declaration of function 'getsize' [-Werror=im
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c410d63
+Sat, Mar 22, 2025  7:23:20 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+d598c08
