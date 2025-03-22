@@ -128,11 +128,11 @@ int parentesisBalanceados(char *cadena) {
       {
          noes=true;
       }
-      if(cadena[i]=='[' && cadena[tamano-(i+1)]!=']')
+      else if(cadena[i]=='[' && cadena[tamano-(i+1)]!=']')
       {
          noes=true;
       }
-      if(cadena[i]=='{' && cadena[tamano-(i+1)]!='}')
+      else if(cadena[i]=='{' && cadena[tamano-(i+1)]!='}')
       {
          noes=true;
       }
