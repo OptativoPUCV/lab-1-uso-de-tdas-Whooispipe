@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include "arraylist.h"
 #include "stack.h"
-#include <stdbol.h>
+#include <stdbool.h>
 
 //#include "exercises.h"
 
