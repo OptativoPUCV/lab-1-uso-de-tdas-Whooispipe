@@ -358,3 +358,9 @@ exercises.c:133:13: error: implicit declaration of function 'is_empty' [-Werror=
 cc1.exe: all warnings being treated as errors
 Compilation failed
 1781d4a
+Sat, Mar 22, 2025  7:15:50 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|1
+total_score: 50/70
+3517bcb
