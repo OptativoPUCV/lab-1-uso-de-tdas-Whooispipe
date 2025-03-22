@@ -307,3 +307,13 @@ exercises.c:147:1: error: control reaches end of non-void function [-Werror=retu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a48b760
+Fri, Mar 21, 2025  9:03:04 PM: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+exercises.c:8:20: fatal error: stdbol.h: No such file or directory
+ #include <stdbol.h>
+                    ^
+compilation terminated.
+Compilation failed
+8e7a9e9
