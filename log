@@ -388,3 +388,14 @@ Sat, Mar 22, 2025  7:21:12 PM:
  tests:  7|1
 total_score: 60/70
 baa51fc
+Sat, Mar 22, 2025  7:22:59 PM: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:142:7: error: implicit declaration of function 'getsize' [-Werror=implicit-function-declaration]
+    if(getsize(pila) != (strlen(cadena)/2))
+       ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c410d63

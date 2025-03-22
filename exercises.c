@@ -139,7 +139,14 @@ int parentesisBalanceados(char *cadena)
       }
       
    }
-   return 1;
+   if(getsize(pila) != (strlen(cadena)/2))
+   {
+      return 0;
+   }
+   else
+   {
+      return 1;
+   }
 }
 
 /*waudhwuahdiuwahdiuh
