@@ -265,3 +265,24 @@ exercises.c:8:18: fatal error: list.h: No such file or directory
 compilation terminated.
 Compilation failed
 c32187b
+Fri, Mar 21, 2025  9:00:28 PM: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:123:4: error: unknown type name 'bool'
+    bool noes=false;
+    ^~~~
+exercises.c:123:14: error: 'false' undeclared (first use in this function)
+    bool noes=false;
+              ^~~~~
+exercises.c:123:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:124:31: error: multi-character character constant [-Werror=multichar]
+    for(int i=0 ; cadena[i] != '/0'; i++)
+                               ^~~~
+exercises.c:128:15: error: 'true' undeclared (first use in this function)
+          noes=true;
+               ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+23e8354
