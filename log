@@ -286,3 +286,24 @@ exercises.c:128:15: error: 'true' undeclared (first use in this function)
 cc1.exe: all warnings being treated as errors
 Compilation failed
 23e8354
+Fri, Mar 21, 2025  9:01:55 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:123:4: error: unknown type name 'bool'
+    bool noes=false;
+    ^~~~
+exercises.c:123:14: error: 'false' undeclared (first use in this function)
+    bool noes=false;
+              ^~~~~
+exercises.c:123:14: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:128:15: error: 'true' undeclared (first use in this function)
+          noes=true;
+               ^~~~
+exercises.c:147:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a48b760
