@@ -627,3 +627,26 @@ exercises.c:150:1: error: control reaches end of non-void function [-Werror=retu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2970de4
+Sat, Mar 22, 2025  8:23:00 PM: 
+ exercises.c | 30 +++++++++++++++++-------------
+ 1 file changed, 17 insertions(+), 13 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:131:39: error: passing argument 2 of 'pushBack' makes pointer from integer without a cast [-Werror=int-conversion]
+             pushBack(pilalaotramitad, cadena[i]);
+                                       ^~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:20:6: note: expected 'void *' but argument is of type 'char'
+ void pushBack(List *L, void *dato);
+      ^~~~~~~~
+In file included from test.c:5:0:
+exercises.c:136:29: error: dereferencing pointer to incomplete type 'Stack {aka struct List}'
+          if (pilalaotramitad->top < 0)
+                             ^~
+exercises.c:141:21: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+          char top = first(pilalaotramitad);  // Ver el tope de la pila
+                     ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b5a6215
