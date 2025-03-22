@@ -650,3 +650,26 @@ exercises.c:141:21: error: initialization makes integer from pointer without a c
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b5a6215
+Sat, Mar 22, 2025  8:27:36 PM: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:130:39: error: passing argument 2 of 'pushBack' makes pointer from integer without a cast [-Werror=int-conversion]
+             pushBack(pilalaotramitad, cadena[i]);
+                                       ^~~~~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:20:6: note: expected 'void *' but argument is of type 'char'
+ void pushBack(List *L, void *dato);
+      ^~~~~~~~
+In file included from test.c:5:0:
+exercises.c:135:29: error: dereferencing pointer to incomplete type 'Stack {aka struct List}'
+          if (pilalaotramitad->top < 0)
+                             ^~
+exercises.c:140:21: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+          char top = first(pilalaotramitad);  // Ver el tope de la pila
+                     ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+bb30e24

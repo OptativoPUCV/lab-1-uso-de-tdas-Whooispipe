@@ -125,9 +125,8 @@ int parentesisBalanceados(char *cadena)
 
     for (int i = 0; i < strlen(cadena); i++) 
     {
-        if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{') 
+         if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{') 
          {
-            
             pushBack(pilalaotramitad, cadena[i]);
          } 
          else if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}') 
@@ -140,17 +139,19 @@ int parentesisBalanceados(char *cadena)
 
          char top = first(pilalaotramitad);  // Ver el tope de la pila
          if ((cadena[i] == ')' && top != '(') || (cadena[i] == ']' && top != '[') || (cadena[i] == '}' && top != '{')) 
-         {
-                
+         {   
             return 0;
          }
-
             pop(pilalaotramitad);  
          }
    }
 
     
-    return 1;
+if (pilalaotramitad->top >= 0) 
+{
+   return 0;
+}
+   return 1;
 }
 
 
