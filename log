@@ -547,3 +547,14 @@ exercises.c:124:8: error: unused variable 'largocadena' [-Werror=unused-variable
 cc1.exe: all warnings being treated as errors
 Compilation failed
 0f3f312
+Sat, Mar 22, 2025  8:12:22 PM: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:29: error: implicit declaration of function 'firs' [-Werror=implicit-function-declaration]
+       if(cadena[i]=='('  && firs(pilalaotramitad)!=')')
+                             ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ad5250f
