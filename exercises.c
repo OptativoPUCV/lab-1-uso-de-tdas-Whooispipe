@@ -119,46 +119,28 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) 
-{
-   int largocadena= strlen(cadena);
-   if(largocadena %2!=0)
-   {
-      return 0;
+int parentesisBalanceados(char *cadena) {
+   Stack *stack = create_stack(strlen(cadena));
+   for (int i = 0; i < strlen(cadena); i++) {
+       if (cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{') {
+           push(stack, cadena[i]);
+       } else if (cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}') {
+           char top = peek(stack);
+           if ((cadena[i] == ')' && top == '(') ||
+               (cadena[i] == ']' && top == '[') ||
+               (cadena[i] == '}' && top == '{')) {
+               pop(stack);
+           } else {
+               free(stack->items);
+               free(stack);
+               return 0;
+           }
+       }
    }
-   Stack *pilalaotramitad= create_stack();
-   for( int i = (strlen(cadena)/2) ; i < strlen(cadena) ; i++)
-   {
-      if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}')
-      {
-         pushBack(pilalaotramitad , &cadena[i]);
-      }
-   }
-   
-   for(int i=(strlen(cadena)/2); i>-1;i--)
-   {
-      char *elemento= first(pilalaotramitad);
-      if(cadena[i] == '(' && *elemento == ')')
-      {
-         pop(pilalaotramitad);
-      }
-      else if(cadena[i] == '[' && *elemento == ']')
-      {
-         pop(pilalaotramitad);
-      }
-      else if(cadena[i] == '{' && *elemento == '}')
-      {
-         pop(pilalaotramitad);
-      }
-      else
-      {
-         return 0;
-      }
-
-
-
-   }
-   return 1;
+   int result = (stack->top == -1);  // La pila debe estar vacía si los paréntesis están balanceados
+   free(stack->items);
+   free(stack);
+   return result;
 }
 
 /*waudhwuahdiuwahdiuh
