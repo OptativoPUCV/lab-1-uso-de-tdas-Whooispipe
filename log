@@ -868,3 +868,13 @@ Sat, Mar 22, 2025  8:50:23 PM:
  tests:  4|1
 total_score: 50/70
 840e28b
+Sat, Mar 22, 2025  8:51:44 PM: 
+ exercises.c | 49 +++++++++++++++----------------------------------
+ 1 file changed, 15 insertions(+), 34 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:132:7: error: expected expression before 'else'
+       else if(cadena[i]=='[' && cadena[tamano-(i+1)]!=']')
+       ^~~~
+Compilation failed
+85707a8
