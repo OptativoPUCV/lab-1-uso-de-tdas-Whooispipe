@@ -149,7 +149,7 @@ int parentesisBalanceados(char *cadena)
 
    }
    
-   return pilalaotramitad.top==NULL;
+   return 1;
    
 }
 
