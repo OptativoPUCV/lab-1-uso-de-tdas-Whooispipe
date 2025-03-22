@@ -673,3 +673,20 @@ exercises.c:140:21: error: initialization makes integer from pointer without a c
 cc1.exe: all warnings being treated as errors
 Compilation failed
 bb30e24
+Sat, Mar 22, 2025  8:33:28 PM: 
+ exercises.c | 31 +++++++++++++++----------------
+ 1 file changed, 15 insertions(+), 16 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:51: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='('  && first(pilalaotramitad)!=')')
+                                                   ^~
+exercises.c:138:51: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='['  && first(pilalaotramitad)!=']')
+                                                   ^~
+exercises.c:142:51: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='{'  && first(pilalaotramitad)!='}')
+                                                   ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+47997f6
