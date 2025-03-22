@@ -513,3 +513,17 @@ arraylist.h:20:6: note: expected 'void *' but argument is of type 'char'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 17d181d
+Sat, Mar 22, 2025  8:00:46 PM: 
+ exercises.c | 34 ++++++++++++++++------------------
+ 1 file changed, 16 insertions(+), 18 deletions(-)
+In file included from test.c:5:0:
+exercises.c:122:7: error: expected '=', ',', ';', 'asm' or '__attribute__' before numeric constant
+ forma 2 int parentesisBalanceados(char *cadena)
+       ^
+test.c: In function 'test_parentesis_balanceados':
+test.c:217:9: error: implicit declaration of function 'parentesisBalanceados' [-Werror=implicit-function-declaration]
+     if(!parentesisBalanceados(s)){
+         ^~~~~~~~~~~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ad71ff2
