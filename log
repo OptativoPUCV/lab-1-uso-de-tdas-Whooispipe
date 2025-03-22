@@ -815,3 +815,27 @@ exercises.c:154:1: error: control reaches end of non-void function [-Werror=retu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 93e526b
+Sat, Mar 22, 2025  8:44:30 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:134:50: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='('  && top(pilalaotramitad) !=')')
+                                                  ^~
+exercises.c:138:50: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='['  && top(pilalaotramitad) !=']')
+                                                  ^~
+exercises.c:142:50: error: comparison between pointer and integer [-Werror]
+       if(cadena[i]=='{'  && top(pilalaotramitad) !='}')
+                                                  ^~
+exercises.c:152:26: error: 'pilalaotramitad' is a pointer; did you mean to use '->'?
+    return pilalaotramitad.top==NULL;
+                          ^
+                          ->
+exercises.c:154:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c2093c4
