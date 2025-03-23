@@ -884,3 +884,14 @@ Sat, Mar 22, 2025  8:52:56 PM:
  tests:  9|0
 total_score: 70/70
 5bf4458
+Sat, Mar 22, 2025  9:02:45 PM: 
+ exercises.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:135:16: error: comparison between pointer and integer [-Werror]
+       if(top(p)=='(' && cadena[tamano-(i+1)]!=')')
+                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+727689a
