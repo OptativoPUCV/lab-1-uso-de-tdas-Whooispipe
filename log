@@ -915,3 +915,14 @@ exercises.c:135:16: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 94601fa
+Sat, Mar 22, 2025  9:05:30 PM: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:138:16: error: comparison between pointer and integer [-Werror]
+       if(top(p)=='(' && cadena[tamano-(i+1)]!=')')
+                ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+b9cd595

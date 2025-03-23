@@ -124,10 +124,13 @@ int parentesisBalanceados(char *cadena) {
    bool noes=false;
    Stack *p= create_stack();
    for(int i=strlen(cadena)/2; i<strlen(cadena); i++)
-   {
+   {  
+      
       if(cadena[i]==')' || cadena[i]==']' || cadena[i]=='}')
       {
-         push(p, cadena[i]);
+         char *dato= (char*)malloc(sizeof(char));
+         *dato=cadena[i];
+         push(p, dato);
       }
    }
    for(int i=(strlen(cadena)/2) ; i<strlen(cadena); i++)
